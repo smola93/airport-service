@@ -1,0 +1,25 @@
+body {
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: radial-gradient(#4ff744 0.5px, #f7e5f400 0.5px);
+    background-size: 10px 10px;
+}
+
+.my-table {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.btn-filter {
+    margin-top: 10px;
+}
+
+.custom-title {
+    margin: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
