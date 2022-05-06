@@ -1,4 +1,4 @@
-package com.airportservice;
+package com.airportservice.Home;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
