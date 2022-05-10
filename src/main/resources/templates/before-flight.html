@@ -49,26 +49,40 @@
     </div>
 </nav>
 <h2 class="custom-title" th:text="${title}"/>
-<table class="table my-table">
-    <thead>
-    <tr>
-        <th>Numer lotu</th>
-        <th>Z</th>
-        <th>Do</th>
-        <th>Godzina</th>
-        <th>Status</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>012345</td>
-        <td>Barcelona</td>
-        <td>Modlin</td>
-        <td>00:00</td>
-        <td>Oczekiwany o czasie</td>
-    </tr>
-    </tbody>
-</table>
+<div class="d-flex flex-column justify-content-center align-items-center ms-4">
+    <p><b>Ze względu na przepisy dotyczące przeciwdziałania rozprzestrzeniania się wirusa Covid-19 zasadne jest
+        uwzględnienie w planie podróży i dojazdu na lotnisko zwiększonych środków kontroli bezpieczeństwa zdrowotnego,
+        co może wpływać na przepustowość punktów kontroli bezpieczeństwa.</b></p>
+    <p><b>Przygotuj się do podróży.</b> Punkty odpraw Check-in są otwierane na 3 godziny przed planowaną godziną odlotu samolotu,
+        dlatego zalecamy przybycie na Lotnisku Warszawa/Modlin, z co najmniej takim wyprzedzeniem.
+        Punkty odpraw Check-in są zamykane na 40 minut przed planowanym odlotem,
+        natomiast zamknięcie wyjść Gate następuje na 30 minut przed planowanym odlotem.
+        Przybycie na lotnisko z opóźnieniem może skutkować niewpuszczeniem pasażera na pokład samolotu.</p>
+    <img th:src="@{/images/zegary.png}"/>
+    <p><b>Sprawdź dokumenty.</b> Na początku spakuj do torebki, plecaka  czy marynarki wszystkie niezbędne dokumenty.
+        Sprawdź odpowiednio wcześniej, jakie dokumenty są wymagane w danym kraju - paszport, dowód osobisty, wiza.</p>
+    <img th:src="@{/images/dokumenty.png}"/>
+    <p class="mt-5"><b>Wydrukuj kartę pokładową.</b> Karta pokładowa zawiera wszystkie niezbędne dane dotyczące pasażera i jego podróży.
+        Pamiętaj, aby wydrukować kartę pokładową w domu, unikniesz dodatkowych kosztów i zaoszczędzisz czas.</p>
+    <img th:src="@{/images/karta.png}"/>
+    <p class="mt-5"><b>Spakuj się rozsądnie.</b> Uwzględnij porę roku, pogodę, wagę i rozmiar bagażu podręcznego oraz bagażu rejestrowanego.
+        Regulamin przewozu bagażu realizowany jest w oparciu o przepisy i procedury określonego przewoźnika.
+        Przygotuj się odpowiednio do kontroli bezpieczeństwa. Spakuj do pojedynczej przeźroczystej, zamykanej,
+        plastikowej torebki wszystkie płyny, aerozole i żele* przy uwzględnieniu, że każdy pojemnik nie może przekraczać
+        pojemności 100 ml. Pamiętaj, że spakowane płyny, aerozole i żele* powinny swobodnie mieścić się w torebce o pojemności
+        nieprzekraczającej 1 litra. Przed kontrolą bezpieczeństwa na terenie lotniska w dedykowanych automatach można nabyć
+        torebki. <b>Każdy pasażer może wnieść tylko jedną taką torebkę.</b></p>
+    <img th:src="@{/images/pakowanie.png}"/>
+    <p class="mt-5"><b>Sprawdź status lotów.</b> Śledź zmiany w rozkładach na stronie internetowej lotniska www.airport-service.pl
+        lub u przewoźnika. Informacje o statusie lotów podawane są zwykle z odpowiednim wyprzedzeniem.
+        Przewoźnik może również wysłać w tej sprawie e-mail lub SMS, pamiętaj o tym!</p>
+    <img th:src="@{/images/odloty.png}"/>
+    <p><b>Zaparkuj.</b> Oferta parkingowa lotniska umożliwia pozostawienie samochodu na jednym z dwóch parkingów.
+        Parking krótkoterminowy PA1 usytuowany jest w odległości ok. 50 m od terminala, zaś Parking długoterminowy PA7
+        zlokalizowany jest w odległości ok. 3 km od terminala pasażerskiego. PA7 to jedyny parking,
+        w ramach usług którego otrzymujesz szybki transfer do samych drzwi terminalu pasażerskiego.</p>
+    <img class="mb-5" th:src="@{/images/parkuj.png}"/>
+</div>
 <div class="text-center p-4 footer" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2022 Copyright: Mateusz Samulnik, Damian Skowron
     <!--    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>-->

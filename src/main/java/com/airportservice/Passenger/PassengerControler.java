@@ -24,4 +24,10 @@ public class PassengerControler {
         model.addAttribute("title", "Kierunki lotów - Sezon LATO 2022:");
         return ("flight-info");
     }
+
+    @GetMapping(value = "/before-flight")
+    String returnBeforeFlightPage(Model model) {
+        model.addAttribute("title", "Zanim ruszysz w podróż:");
+        return ("before-flight");
+    }
 }

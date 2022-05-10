@@ -3,7 +3,7 @@ body {
     opacity: 1;
     background-image: radial-gradient(#4ff744 0.5px, #f7e5f400 0.5px);
     background-size: 10px 10px;
-    min-height:100vh;
+    min-height: 100vh;
     position: relative;
 }
 
