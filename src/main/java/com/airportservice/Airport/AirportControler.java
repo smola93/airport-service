@@ -17,4 +17,15 @@ public class AirportControler {
         model.addAttribute("title", "Parking:");
         return ("car-park");
     }
+
+    @GetMapping(value = "/terminal")
+    String returnTerminal(Model model) {
+        return ("terminal");
+    }
+
+    @GetMapping(value = "/services")
+    String returnServices(Model model) {
+        model.addAttribute("title", "Usługi:");
+        return ("services");
+    }
 }

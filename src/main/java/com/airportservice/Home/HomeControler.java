@@ -12,4 +12,16 @@ public class HomeControler {
         model.addAttribute("title", "Witamy w aplikacji Airport-Service!");
         return ("home");
     }
+
+    @GetMapping(value = "/about")
+    String returnAbout(Model model) {
+        model.addAttribute("title", "O Aplikacji:");
+        return ("about");
+    }
+
+    @GetMapping(value = "/contact")
+    String returnContact(Model model) {
+        model.addAttribute("title", "Kontakt:");
+        return ("contact");
+    }
 }
