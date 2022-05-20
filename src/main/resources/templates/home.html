@@ -53,19 +53,21 @@
     <thead>
     <tr>
         <th>Numer lotu</th>
-        <th>Z</th>
         <th>Do</th>
         <th>Godzina</th>
+        <th>Terminal</th>
+        <th>Linie lotnicze</th>
         <th>Status</th>
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>012345</td>
-        <td>Barcelona</td>
-        <td>Modlin</td>
-        <td>00:00</td>
-        <td>Oczekiwany o czasie</td>
+    <tr th:each="flight : ${flights}">
+        <td th:text="${flight.number}"></td>
+        <td th:text="${flight.finishPlace}"></td>
+        <td th:text="${#temporals.format(flight.startTime, 'dd-MM-yyyy HH:mm')}"></td>
+        <td th:text="${flight.terminal}"></td>
+        <td th:text="${flight.airlines}"></td>
+        <td th:text="${flight.status}"></td>
     </tr>
     </tbody>
 </table>
